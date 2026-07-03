@@ -23,7 +23,7 @@ public class SnakeGame extends PApplet{
 
   public void draw(){
     //container
-    fill(30, 30, 40, 20);
+    fill(30, 30, 40);
     rect(0, 0, width, height);
     
     snakeX += xSpeed;
@@ -41,6 +41,7 @@ public class SnakeGame extends PApplet{
       PApplet.main("SnakeGame");
   }
 
+  
   public void keyPressed(){
     if(keyCode == RIGHT){
       xSpeed = 5;
